@@ -17,10 +17,10 @@ $(window).scroll(function(){
     $('[data-toggle="tooltip"]').tooltip();
   });
 
-  if (wScroll >= 100) {$(".logo_one").addClass("logo");} else {$(".logo_one").removeClass("logo");}
+  //if (wScroll >= 100) {$(".logo_one").addClass("logo");} else {$(".logo_one").removeClass("logo");}
 
-  if (wScroll >= 100) {$('.logo_one').attr('src', 'img/logo/logo_xan_always_surfing_dark_gray.png');}
-     else {$('.logo_one').attr('src', 'img/logo/logo_xan_always_surfing_white_test_with_shadow_two.png');}
+  if (wScroll >= 200) {$('.logo_icon').attr('src', 'img/logo_thick_version_dark_with_square.png');}
+     else {$('.logo_icon').attr('src', 'img/logo_thick_version_with_shadow.png');}
 
   if (wScroll >= 200) {$(".navbar-default").addClass("bar-nav nav li a");} else{$(".navbar-default").removeClass("bar-nav nav li a");}
 
@@ -28,3 +28,7 @@ $(window).scroll(function(){
 
   if (wScroll >= 200) {$(".logo_icon").addClass("icon_logo");} else{$(".logo_icon").removeClass("icon_logo");}
 });
+$('.carousel').carousel({
+    pause: "false"
+});
+
